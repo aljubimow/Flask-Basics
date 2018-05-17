@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dojo Survey Index page</title>
+</head>
+<body>
+    <h1>Coding Dojo Survey</h1>
+    <br>
+    <form action="/results" method="POST">
+        Your Name:<input type="text" name="name" id="name">
+        <br><br>
+        Dojo Location: 
+        <select name="location" id="location">
+            <option value="San Jose">San Jose</option>
+            <option value="Carmel">Carmel</option>
+            <option value="Monterey">Monterey</option>
+        </select>
+        <br><br>
+        Favorite Language: 
+        <select name="language" id="language">
+            <option value="Python">Python</option>
+            <option value="Django">Django</option>
+            <option value="Java">Java</option>
+        </select>
+        <br><br>
+        Comment (optional):
+        <br>
+        <textarea name="comment"></textarea>
+        <br><br>
+        <input type="submit" value="Button">
+    </form>
+</body>
+</html>
